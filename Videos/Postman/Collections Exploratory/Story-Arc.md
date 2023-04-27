@@ -67,3 +67,22 @@
     - To share your public documentation, share the published URL with your team members, other users, or the community. You can find this URL by selecting the collection you wish to share, the more actions icon, "View Documentation", select "Published" at the top right and then select "Copy published link".
     - In addition to being able to edit your publication settings, you can also unpublish your docs by selecting Unpublish.
 
+https://learning.postman.com/docs/collections/using-collections/
+https://learning.postman.com/docs/collections/running-collections/running-collections-overview/
+- Using collections in development workflows:
+  - Collection Runner
+  - Monitoring
+  - Mocking
+  - Importing & Exporting
+  - Sharing
+  - Watching
+  - Forking
+  - PRs, forks and merging (VC)
+  - Adding comments
+  - Reverting changes
+  - Triggering runs with webhooks
+  - setNextRequest() & building request workflows.
+  - Importing data files to run with
+- Using collection templates:
+- Live collections:
+- Using Newman CLI:
