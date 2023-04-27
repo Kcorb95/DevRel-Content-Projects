@@ -1,0 +1,69 @@
+- What is a collection?
+  - Collections help keep your API requests and elements organized in a workspace.
+  - Collections are executable API descriptions.
+  - Collections can be generated from API schemas and help link API elements like mocks, monitors, and tests to your APIs.
+  - Collections can be shared via documentation, the Run in Postman button or by link.
+  - Collections help enable you to create clean machine readable API documentation.
+  - You can group your Postman requests and examples into collections to keep your workspace organized, to collaborate with teammates, to generate API documentation and API tests, and to automate request runs.
+  - Postman Collections are a group of saved requests. Every request you send in Postman appears under the History tab of the sidebar. On a small scale, reusing requests through the history section is convenient. As your Postman usage grows, it can be time-consuming to find a particular request in your history. Instead of scrolling through your history section, you can save all your requests as a group for easier access.
+- Creating your first collection:
+  - Start by creating or navigating to your workspace.
+  - Select "New" at the top of the sidebar and select "HTTP Request".
+  - Enter a request in the request builder and select Save.
+  - Create your first collection by selecting "New Collection" at the bottom of this window, enter a collection name, select Create and then finally click Save to save the requst in the new collection.
+  - After you save the request, your new collection and the request are listed under Collections in the sidebar.
+  - Existing requests can also be re-organized and dragged into your other collections as your workspace grows.
+  - You may also add requests from your history to a collection. Select History in the sidebar and find the request that you wish to save. Select the more actions icon next to the request and select "Save Request". Choose the collection to add the request to and then select Save.
+- Using Collections:
+  - You can group your Postman requests and examples into collections to keep your workspace organized, to collaborate with teammates, to generate API documentation and API tests, and to automate request runs.
+  - To customize and configure a new collection, do the following:
+    - Select the more actions icon next to your collection to open the context menu and select "Rename" to update your collection's name.
+    - You can specify a description for your collection by selecting the documentation icon to the right. Select the edit icon to write your description. This description will appear in its documentation and in the workspace when anyone opens it.
+    - Select the "Authorization" tab to configure authorization details for all requests in this collection. Each request within your collection will inherit this authorization unless they specify their own.
+    - Write Pre-request scripts which will run before each request in your collection is sent to the server. These will always run, even if your requests have their own pre-request scripts.
+    - Similarly, Test scripts will run after a response is recieved.
+    - This helps you reduce the amount of duplication if multiple requests would need to run similar bits of code.
+    - Variables allow you to define values that are shared across all requests in the collection.
+   - You can pin collections to the top of your list by selecting the star icon next to it.
+   - Use the collection search bar to filter through your collections.
+   - Re-order your requests, folders and examples inside a collection by dragging and dropping them.
+   - You can also add sub-folders to create extra levels of nesting for your collection's requests and examples.
+     - Folders also have their own set of Authorization, Prerequest and Test scripts sections.
+   - Delete a collection by selecting the more actions icon next to the collection's nbame and select "Delete".
+   - You can also recover a deleted collection by selecting the more actions icon next to the collection search bar and opening the trash.
+     - Select the restore icon next to the collection that you wish to recover.
+     - Items remain in your trash for up to one day, or longer depending on your Postman plan.
+- Documenting Collections:
+  - Documentation is an important part of any collection or API. Good documentation helps the people who use your collection understand what it does and how each request works.
+  - Postman automatically generates basic documentation for any collection you create. View the documentation for details about all of the requests in your collection, along with sample code in various client languages.
+  - Request details include the method, authorization type, URL, headers, request and response structures, and examples.
+  - In addition, the documentation displays all key-value pairs for request parameters, headers, and bodies.
+  - Writing Documentation:
+    - To make your documentation even more valuable to users, add descriptions to the items in your collection. Any descriptions you add are automatically included in the documentation for your collection.
+    - You can also edit descriptions when viewing the complete documentation for a collection. Select View complete collection documentation at the bottom of the Documentation pane, and then edit the descriptions as usual.
+    - Add descriptions to parameters and headers to help others understand and use the requests in your collection. These descriptions are visible to people who have access to your collection or anyone viewing your published documentation.
+    - Your documentation automatically includes the type of authorization required to access your endpoints. These details appear below the collection description and also below each reqest in your documentation.
+    - Any examples you add to a collection are also automatically included in the documentation. For each request, your documentation shows the example code snippets as well as the example response body and headers.
+    - Without going into too much detail on the API builder, you can also generate a new collection for API documentation by selecting APIs in the sidebar and selecting an API.
+    - On the API's overview, next to collections, select + and select "Generate from API definition." Change any settings to customize this new collection and then select Generate Collection.
+    - This new collection displays on your API's overview and under your API in the sidebar. To view the documentation for the collection, expand the collection and select View Full Documentation.
+    - Similarly, you can also use an existing collection for API documentation by selecting Copy Existing Collection instead and select the collection that you wish to assign.
+  - Publishing your Docs:
+    - Publishing your documentation makes it publicly available ot anyone with the link to the documentation and a web browser. Publish your documentation to help people around the world learn how to use your collection or interact with your public API.
+    - Public documentation automatically includes details for each request or endpoint in the published collection, along with sample code in various client languages. As you update your collection, the published documentation automatically stays in sync with your latest changes. There's no need to publish the documentation again after making changes.
+    - Your public documentation includes the Run in Postman button so users can interact with your collection or API directly in Postman.
+    - To publish documentation, it must be part of a collection. You can publish documentation for any collections that you created or have permission to edit.
+    - Select "Collections" in the sidebar and then the more actions icon next to the collectiont hat you wish to publish. Select "View Documentation" and then select Publish at the upper right.
+    - Here you can customize the publication settings for your documentation as needed:
+      - Select an environment to publish environment variables with your documentation. The initial values of all variables are published with your documentation, so make sure they don't contain sensitive information such as passwords or tokens.
+      - Select a custom domain where you want to publish your documentation.
+      - Select a layout style for your documentation. Double column displays sample code in a column next to the documentation whereas single displays them inline beneath each request.
+      - Select a light or dark theme for your documentation or just default to the system theme.
+      - You can also define a custom logo for each theme. This defaults to your Postman team's logo.
+      - You can customize the colors for each theme such as the header background, code background and highlight.
+      - You can additionally add metadata to your documentation to make it more discoverable on the web. Changing the title and description can help improve your SEO.
+    - When you're finished changing settings, you can preview the documentation and then finally publish it.
+    - For people on the Postman Free, Basic and Professional plans, you can optionally select a public workspace to move the collection to. This will make the collection discoverable ont he Public API Network.
+    - To share your public documentation, share the published URL with your team members, other users, or the community. You can find this URL by selecting the collection you wish to share, the more actions icon, "View Documentation", select "Published" at the top right and then select "Copy published link".
+    - In addition to being able to edit your publication settings, you can also unpublish your docs by selecting Unpublish.
+
