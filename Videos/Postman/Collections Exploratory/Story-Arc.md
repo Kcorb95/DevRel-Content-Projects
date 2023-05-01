@@ -66,6 +66,49 @@
     - For people on the Postman Free, Basic and Professional plans, you can optionally select a public workspace to move the collection to. This will make the collection discoverable ont he Public API Network.
     - To share your public documentation, share the published URL with your team members, other users, or the community. You can find this URL by selecting the collection you wish to share, the more actions icon, "View Documentation", select "Published" at the top right and then select "Copy published link".
     - In addition to being able to edit your publication settings, you can also unpublish your docs by selecting Unpublish.
+- There are a number of ways that you can share a collection in Postman:
+  - Invite others to collaborate by selecting the mor actions icon next to the collection name and selecting "Share". You can enter names, email addresses and group names here for the people you want to share the element with.
+  - You may also select whether or not these people will have Viewer or Editor permissions for the element that you are trying to share.
+  - Additionally you can share by copying a link and sending it directly.
+  - When you share a collection, external users who aren't on your Postman team will receive an invitation to join your team right away if you're a team admin or super admin.
+  - You can allow external users who aren't in your Postman team to view a collection by selecting the more actions icon next to the collection name, selecting Share, then turning on the toggle next to "Allow Guests with the link to join your team and view collection".
+  - This assigns people the "Guest" role at the team level and a limited Viewer role at the collection level. This does not consume paid seats.
+  - The Run in Postman button can be used to share collections in a website or README by embedding a small snippet of code.
+- Collaborating with Collections:
+  - Forks, PRs, Merging, Versions, Watching, comments etc.
+  - As your team grows and there are more people working on collections in your workspaces, you may find it helpful to "Watch" collections. 
+  - After selecting the watch icon for a collection, Postman notifies you when a team member makes changes to the collection, including adding a new request, modifying the existing requests, adding or updating variables, editing pre-request scripts or tests and adding or deleting a folder.
+  - View the collection's changelog to see what has changed since you last looked at a collection.
+  - Version Controlling:
+    - Another helpful tool for collaborating with others is being able to fork collections.
+    - You can make a copy, or "fork" of a collection in your own workspace to make any changes you want and develop new collection versions.
+    - Select the fork icon, give it a name and select the workspace that you want to send this new copy to live in.
+    - You can fork collections, environments and flows.
+    - If there are any mocks or monitors associated with the parent element, they will not be linked to the forked element and will need to be re-created specifically for the newly forked element.
+    - After making changes to a fork, you have the ability to submit a Pull Request to send your changes upstream to be re-merged into the parent collection.
+    - As part of this process, you will request that reviewers look at your changes. Reviewers can make comments on your changes and will decide whether to approve them and merge them into the parent element.
+    - To create a pull request, hover over your forked collection that you wish to merge and select the "more actions" icon next to it's name and select "Create Pull Request".
+    - Select "Changes" to review the changes that have been made to this collection.
+    - If the parent element has had any changes since you last updated your fork, you can pull those changes into your fork before merging.
+    - You can also pull any changes to your fork by selecting the more actions icon and selecting "Pull Changes".
+    - Additionally, if there are any conflicts between the fork and the parent element, Postman highlights them so you can reolve them.
+    - Under "Overview", enter a title and description for your Pull Request. Additionally, select up to 50 reviewers from the dropdown list. Reviewers must have Editor access on the element in order to merge your changes.
+    - To access the list of pull requests, go to the element and select the Pull Requests icon on the right sidebar. Each item shows the PRs status which will be OPEN for any that have not yet been merged or declined.
+    - When you're tagged as a reviewer on a PR, Postman notifies you when a team member creates a PR both under the notifications icon and in your email.
+    - Review any changes in the diff, add comments, edit details and ultimately decide whether or not to merge a pull request to update your collection.
+  - If you ever need to revert your collection to an earlier state, select the changelog icon on the right sidebar.
+  - Here you can select a session to expand it and then select the more actions icon next to a change and select "Restore to this change."
+  - This will revert a collection to the point immediately after you performed the selected change.
+  - Using Collections in development workflows:
+    - Collections can power various parts of your API development, testing and publishing workflows.
+    - Select "Run" to access the collection runner. This allows you to run all requests in a collection and build testing workflows into your runs.
+    - Select the number of iterations for your collection run, the delay in milliseconds between each request, a data file for the run and whether or not to persist responses for a session to review after running.
+    - The collection runner logs your request test results and can use scripts to pass data between requests and alter the request workflow.
+    - You can configure the collection runner to meet your development needs by using a specific environmant and even pass data files into a run.
+    - Collection runs enable you to automate your API testing and you can schedule runs to run in the Postman cloud with the Collection Runner or with monitors.
+    - You can also integrate collection runs with your CI/CD pipeline using the Postman CLI.
+    - 
+
 
 https://learning.postman.com/docs/collections/using-collections/
 https://learning.postman.com/docs/collections/running-collections/running-collections-overview/
@@ -74,12 +117,7 @@ https://learning.postman.com/docs/collections/running-collections/running-collec
   - Monitoring
   - Mocking
   - Importing & Exporting
-  - Sharing
-  - Watching
-  - Forking
-  - PRs, forks and merging (VC)
   - Adding comments
-  - Reverting changes
   - Triggering runs with webhooks
   - setNextRequest() & building request workflows.
   - Importing data files to run with
