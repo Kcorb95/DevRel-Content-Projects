@@ -4,16 +4,22 @@
   - Collections can be generated from API schemas and help link API elements like mocks, monitors, and tests to your APIs.
   - Collections can be shared via documentation, the Run in Postman button or by link.
   - Collections help enable you to create clean machine readable API documentation.
-  - You can group your Postman requests and examples into collections to keep your workspace organized, to collaborate with teammates, to generate API documentation and API tests, and to automate request runs.
-  - Postman Collections are a group of saved requests. Every request you send in Postman appears under the History tab of the sidebar. On a small scale, reusing requests through the history section is convenient. As your Postman usage grows, it can be time-consuming to find a particular request in your history. Instead of scrolling through your history section, you can save all your requests as a group for easier access.
+  - Collection Uses:
+    - You can group your Postman requests and examples into collections to keep your workspace organized, to collaborate with teammates, to generate API documentation and API tests, and to automate request runs.
+  - Run History:
+    - Postman Collections are a group of saved requests. Every request you send in Postman appears under the History tab of the sidebar. 
+    - On a small scale, reusing requests through the history section is convenient. As your Postman usage grows, it can be time-consuming to find a particular request in your history. 
+    - Instead of scrolling through your history section, you can save all your requests as a group for easier access.
+
 - Creating your first collection:
   - Start by creating or navigating to your workspace.
   - Select "New" at the top of the sidebar and select "HTTP Request".
   - Enter a request in the request builder and select Save.
-  - Create your first collection by selecting "New Collection" at the bottom of this window, enter a collection name, select Create and then finally click Save to save the requst in the new collection.
-  - After you save the request, your new collection and the request are listed under Collections in the sidebar.
+  - Create your first collection by selecting "New Collection" at the bottom of this window, enter a collection name, select "Create" and then finally click "Save" to save the requst in the new collection.
+  - After you save the request, your new collection and the request are listed under "Collections" in the sidebar.
   - Existing requests can also be re-organized and dragged into your other collections as your workspace grows.
-  - You may also add requests from your history to a collection. Select History in the sidebar and find the request that you wish to save. Select the more actions icon next to the request and select "Save Request". Choose the collection to add the request to and then select Save.
+  - You may also add requests from your history to a collection. Select "History" in the sidebar and find the request that you wish to save. Select the more actions icon next to the request and select "Save Request". Choose the collection to add the request to and then select Save.
+
 - Using Collections:
   - You can group your Postman requests and examples into collections to keep your workspace organized, to collaborate with teammates, to generate API documentation and API tests, and to automate request runs.
   - To customize and configure a new collection, do the following:
@@ -24,15 +30,16 @@
     - Similarly, Test scripts will run after a response is recieved.
     - This helps you reduce the amount of duplication if multiple requests would need to run similar bits of code.
     - Variables allow you to define values that are shared across all requests in the collection.
-   - You can pin collections to the top of your list by selecting the star icon next to it.
-   - Use the collection search bar to filter through your collections.
-   - Re-order your requests, folders and examples inside a collection by dragging and dropping them.
-   - You can also add sub-folders to create extra levels of nesting for your collection's requests and examples.
-     - Folders also have their own set of Authorization, Prerequest and Test scripts sections.
-   - Delete a collection by selecting the more actions icon next to the collection's nbame and select "Delete".
-   - You can also recover a deleted collection by selecting the more actions icon next to the collection search bar and opening the trash.
-     - Select the restore icon next to the collection that you wish to recover.
-     - Items remain in your trash for up to one day, or longer depending on your Postman plan.
+  - You can pin collections to the top of your list by selecting the star icon next to it.
+  - Use the collection search bar to filter through your collections.
+  - Re-order your requests, folders and examples inside a collection by dragging and dropping them.
+  - You can also add sub-folders to create extra levels of nesting for your collection's requests and examples.
+    - Folders also have their own set of Authorization, Prerequest and Test scripts sections.
+  - Delete a collection by selecting the more actions icon next to the collection's nbame and select "Delete".
+  - You can also recover a deleted collection by selecting the more actions icon next to the collection search bar and opening the trash.
+    - Select the restore icon next to the collection that you wish to recover.
+    - Items remain in your trash for up to one day, or longer depending on your Postman plan.
+
 - Documenting Collections:
   - Documentation is an important part of any collection or API. Good documentation helps the people who use your collection understand what it does and how each request works.
   - Postman automatically generates basic documentation for any collection you create. View the documentation for details about all of the requests in your collection, along with sample code in various client languages.
@@ -66,6 +73,13 @@
     - For people on the Postman Free, Basic and Professional plans, you can optionally select a public workspace to move the collection to. This will make the collection discoverable ont he Public API Network.
     - To share your public documentation, share the published URL with your team members, other users, or the community. You can find this URL by selecting the collection you wish to share, the more actions icon, "View Documentation", select "Published" at the top right and then select "Copy published link".
     - In addition to being able to edit your publication settings, you can also unpublish your docs by selecting Unpublish.
+
+- Importing & Exporting:
+  - You can additionally import and export collections in Postman.
+  - Select "Import" in the upper left and then enter the URL or raw text for your collection.
+  - Additionally, you can upload files or folders or even import from various git repositories, code repos and other API gateways.
+  - To export a collection, select the more actions icon next to the collection and then select "Export". This JSON file can be shared and imported to create a copy of your collection.
+
 - There are a number of ways that you can share a collection in Postman:
   - Invite others to collaborate by selecting the mor actions icon next to the collection name and selecting "Share". You can enter names, email addresses and group names here for the people you want to share the element with.
   - You may also select whether or not these people will have Viewer or Editor permissions for the element that you are trying to share.
@@ -74,53 +88,101 @@
   - You can allow external users who aren't in your Postman team to view a collection by selecting the more actions icon next to the collection name, selecting Share, then turning on the toggle next to "Allow Guests with the link to join your team and view collection".
   - This assigns people the "Guest" role at the team level and a limited Viewer role at the collection level. This does not consume paid seats.
   - The Run in Postman button can be used to share collections in a website or README by embedding a small snippet of code.
+
 - Collaborating with Collections:
   - Forks, PRs, Merging, Versions, Watching, comments etc.
   - As your team grows and there are more people working on collections in your workspaces, you may find it helpful to "Watch" collections. 
   - After selecting the watch icon for a collection, Postman notifies you when a team member makes changes to the collection, including adding a new request, modifying the existing requests, adding or updating variables, editing pre-request scripts or tests and adding or deleting a folder.
   - View the collection's changelog to see what has changed since you last looked at a collection.
   - Version Controlling:
-    - Another helpful tool for collaborating with others is being able to fork collections.
-    - You can make a copy, or "fork" of a collection in your own workspace to make any changes you want and develop new collection versions.
-    - Select the fork icon, give it a name and select the workspace that you want to send this new copy to live in.
-    - You can fork collections, environments and flows.
-    - If there are any mocks or monitors associated with the parent element, they will not be linked to the forked element and will need to be re-created specifically for the newly forked element.
-    - After making changes to a fork, you have the ability to submit a Pull Request to send your changes upstream to be re-merged into the parent collection.
-    - As part of this process, you will request that reviewers look at your changes. Reviewers can make comments on your changes and will decide whether to approve them and merge them into the parent element.
-    - To create a pull request, hover over your forked collection that you wish to merge and select the "more actions" icon next to it's name and select "Create Pull Request".
-    - Select "Changes" to review the changes that have been made to this collection.
-    - If the parent element has had any changes since you last updated your fork, you can pull those changes into your fork before merging.
-    - You can also pull any changes to your fork by selecting the more actions icon and selecting "Pull Changes".
-    - Additionally, if there are any conflicts between the fork and the parent element, Postman highlights them so you can reolve them.
-    - Under "Overview", enter a title and description for your Pull Request. Additionally, select up to 50 reviewers from the dropdown list. Reviewers must have Editor access on the element in order to merge your changes.
-    - To access the list of pull requests, go to the element and select the Pull Requests icon on the right sidebar. Each item shows the PRs status which will be OPEN for any that have not yet been merged or declined.
-    - When you're tagged as a reviewer on a PR, Postman notifies you when a team member creates a PR both under the notifications icon and in your email.
-    - Review any changes in the diff, add comments, edit details and ultimately decide whether or not to merge a pull request to update your collection.
-  - If you ever need to revert your collection to an earlier state, select the changelog icon on the right sidebar.
-  - Here you can select a session to expand it and then select the more actions icon next to a change and select "Restore to this change."
-  - This will revert a collection to the point immediately after you performed the selected change.
+    - Forking: 
+      - Another helpful tool for collaborating with others is being able to fork collections.
+      - You can make a copy, or "fork" of a collection in your own workspace to make any changes you want and develop new collection versions.
+      - Select the fork icon, give it a name and select the workspace that you want to send this new copy to live in.
+      - You can fork collections, environments and flows.
+      - If there are any mocks or monitors associated with the parent element, they will not be linked to the forked element and will need to be re-created specifically for the newly forked element.
+    - Pull Requests:
+      - After making changes to a fork, you have the ability to submit a Pull Request to send your changes upstream to be re-merged into the parent collection.
+      - As part of this process, you will request that reviewers look at your changes. Reviewers can make comments on your changes and will decide whether to approve them and merge them into the parent element.
+      - To create a pull request, hover over your forked collection that you wish to merge and select the "more actions" icon next to it's name and select "Create Pull Request".
+      - Select "Changes" to review the changes that have been made to this collection.
+    - Pulling Changes:
+      - If the parent element has had any changes since you last updated your fork, you can pull those changes into your fork before merging.
+      - You can also pull any changes to your fork by selecting the more actions icon and selecting "Pull Changes".
+    - Merging & Resolving Conflicts:
+      - Additionally, if there are any conflicts between the fork and the parent element, Postman highlights them so you can resolve them.
+    - Reviewing PRs:
+      - Under "Overview", enter a title and description for your Pull Request. Additionally, select up to 50 reviewers from the dropdown list. Reviewers must have Editor access on the element in order to merge your changes.
+      - To access the list of pull requests, go to the element and select the Pull Requests icon on the right sidebar. Each item shows the PRs status which will be OPEN for any that have not yet been merged or declined.
+      - When you're tagged as a reviewer on a PR, Postman notifies you when a team member creates a PR both under the notifications icon and in your email.
+      - Review any changes in the diff, add comments, edit details and ultimately decide whether or not to merge a pull request to update your collection.
+  - Reverting Changes:
+    - If you ever need to revert your collection to an earlier state, select the changelog icon on the right sidebar.
+    - Here you can select a session to expand it and then select the more actions icon next to a change and select "Restore to this change."
+    - This will revert a collection to the point immediately after you performed the selected change.
   - Using Collections in development workflows:
-    - Collections can power various parts of your API development, testing and publishing workflows.
-    - Select "Run" to access the collection runner. This allows you to run all requests in a collection and build testing workflows into your runs.
-    - Select the number of iterations for your collection run, the delay in milliseconds between each request, a data file for the run and whether or not to persist responses for a session to review after running.
-    - The collection runner logs your request test results and can use scripts to pass data between requests and alter the request workflow.
-    - You can configure the collection runner to meet your development needs by using a specific environmant and even pass data files into a run.
-    - Collection runs enable you to automate your API testing and you can schedule runs to run in the Postman cloud with the Collection Runner or with monitors.
-    - You can also integrate collection runs with your CI/CD pipeline using the Postman CLI.
-    - 
-
-
-https://learning.postman.com/docs/collections/using-collections/
-https://learning.postman.com/docs/collections/running-collections/running-collections-overview/
-- Using collections in development workflows:
-  - Collection Runner
-  - Monitoring
-  - Mocking
-  - Importing & Exporting
-  - Adding comments
-  - Triggering runs with webhooks
-  - setNextRequest() & building request workflows.
-  - Importing data files to run with
-- Using collection templates:
-- Live collections:
-- Using Newman CLI:
+    - Collection Runner:
+      - Collections can power various parts of your API development, testing and publishing workflows.
+      - Select "Run" to access the collection runner. This allows you to run all requests in a collection and build testing workflows into your runs.
+      - Among the provided configuration options, you can select the number of iterations for your collection run and optionally include a data file for the run and whether or not to persist responses for a session to review after running.
+      - By default, your requests run in the sequence they're listed in in the collection. If you need to change this order, select and drag a request to it's new location in the order.
+      - Additionally, you can also remove an individual request from the run by clearing the checkbox next to it's name.
+    - Building Workflows:
+      - You can also alter the flow of execution from your request scripts using setNextRequest to create workflows.
+      - The collection runner logs your request test results and can use scripts to pass data between requests and alter the request workflow.
+    - Logging and Debugging:
+      - When running collections manually, Postman displays the results of your request executions and test results in real time.
+      - To learn more about what happened during a collection run, you can view the details about each individual request and it's headers and body.
+    - Scheduling Runs:
+      - In addition to running collections manually, the Collection Runner enables you to schedule collections to run automatically at specified times in the Postman cloud. You can also use collection runs in conjunction with other Postman utilities to build automation into your API projects.
+      - The "Scheduled runs" tab shows all of the scheduled runs for the current collection. This includes the upcoming run's scheduled time, the name of the scheduled run and the environment associated with the scheduled run.
+      - You can view the scheduled run's latest results as well as pause, resume, edit and delete scheduled runs from this page.
+      - If you are running the desktop version of Postman, you can also export the results of a collection run to share with your team. Open the collection run in the runner and select "Export Results" at the top right to download the run.
+    - Postman CLI
+      - You can use the Postman CLI to manually run and test collections.
+      - You can also use the Postman CLI to automate collection runs on CI/CD pipelines.
+      - When the Postman CLI runs a collection, the collection and its tests execute locally and the results are sent to Postman servers as an API call.
+      - After installing and setting up the Postman CLI, you can export your collection or even provide a URL to run it.
+    - Newman
+      - Similarly, Newman also enables you to run collections locally from the command line.
+      - Install NodeJS and Newman via NPM. Then either export your collection or provide a URL to run it locally via Newman.
+      - By default, Newman exits with a status code of 0 if everything runs as expected with no exceptions. You can configure your continuous integration (CI) tools to respond to Newman's exit codes and correspondingly pass or fail a build. You can also use the --bail flag to make Newman stop the run if it encounters a test case error with a status code of 1, which can then be picked up by your CI tool or build system.
+    - Monitors:
+      - Postman Monitors give you continuous visibility into the health and performance of your APIs.
+      - A collection-based monitor runs a series of requests from the Postman cloud on a schedule you set. 
+      - When creating a monitor, you choose a collection with the requests you want to run. These can be basic requests that indicate whether an endpoint is up and reachable.
+      - More complex collections can make use of chained requests, test scripts, and environment variables to validate API responses and functionality.
+      - Once the monitor is running you’ll be alerted to any test failures, so you can identify and address issues before your API’s consumers are affected.
+    - Webhooks:
+      -  Using a webhook, you can trigger a collection run in Postman at a specific time or when an event occurs with your own custom payload.
+      -  This enables the collection to be run independently of any environment, instead relying only on the data sent to the webhook.
+      -  With a collection webhook, data is sent to the webhook URL using a POST request when certain events are triggered.
+      -  The data sent to the webhook is accessible inside the collection in the globals object. Using scripts, you can parse that data and use it during the collection run in any way possible.
+      -  Webhooks for a collection can only be created using the Postman API.
+      -  Send a POST request to https://api.getpostman.com/webhooks providing the name of the webhook and the collection UID to trigger when calling this webhook.
+    - Mock Servers:
+      - Postman enables you to create mock servers to assist with API development and testing.
+      - A mock server simulates the behavior of a real API server by accepting requests and returning responses.
+      - By adding a mock server to your collection and adding examples to your requests, you can simulate the behavior of a real API.
+      - When you send a request to a mock server, Postman matches the request to a saved example in your collection. Postman then responds with the data you added to the example. 
+      - To view existing mock servers in your workspace, select Mock Servers in the sidebar.
+      - To create a mock server, send a request to any API. Then in the response pane, select Save Response and Save as Example.
+      - Select Collections in the sidebar and then the more actions icon next to where the collection where the request was saved and select "Mock Collection".
+      - Give your mock a name and select Create Mock Server.
+      - Now copy the mock URL and go back to your request. Replace the base part of the URL with this mock server URL and select Send.
+      - Postman returns the example response that you saved for the request, this time from the mock server.
+      - Open the example and change the response, then save the example and send the request again. Postman returns your edited mock response.
+  
+  - Collection Templates:
+    - Not sure where to start when creating a collection?
+    - Instead of starting from scratch, you can also create a collection from a template.
+    - Get started with integration and regression testing, RESTful API basics, API documentation, Authorization methods, data visualization, conditional workflows, mock data generation and running collections with data files.
+    - When in a workspace, select "New" and then select "Use a template".
+    - Postman’s collection templates help with exploring the Postman API platform's capabilitie swith ease, gaining insights into tried and tested workflows for API development and eliminates the need to build or create collections from scratch to expedite development and testing time.
+  
+  - Live Collections:
+    - Postman Live Collections enable you to keep your collections up-to-date based on the usage of your application. By observing your application, the Postman SDK automatically updates your Live Collections.
+    - Live Collections help improve collaboration by ensuring everyone stays up to date on the latest changes and improvements to your APIs.
+    - It helps promote better testing by allowing developers and testers to easily test your API in a real environment. This can help identify issues and bugs before they are deployed to production.
+    - Postman Live Collections can streamline the development process by enabling developers to quickly and easily set up their collection and maintain it. This can help automate the manual process of creating and updating collections which sometimes results in an incomplete collection.
+    - They can also automatically generate documentation for your API. This documentation can be updated in real-time, making it easier for developers to understand and use your API.
